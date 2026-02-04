@@ -36,6 +36,11 @@ body {
 #header #name {
   font-size: 1.5em;
   color: #b89aff;
+  cursor: pointer;
+  transition: text-shadow 0.3s ease;
+}
+#header #name:hover {
+  text-shadow: 0 0 10px #8b5cf6;
 }
 #header #navbar {
   list-style-type: none;
@@ -66,6 +71,11 @@ body {
   max-width: 100%;
   height: auto;
   border-radius: 20%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#intro #profile-pic img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
 }
 #intro {
   display: flex;
@@ -273,6 +283,26 @@ body {
   padding: 0px 4px;
 }
 
+#projects .project .project-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 16px;
+  background-color: #1e1b4b;
+  color: #8b5cf6;
+  text-decoration: none;
+  border: 1px solid #4c1d95;
+  border-radius: 12px;
+  font-size: 0.9em;
+  font-weight: bold;
+  transition: all 0.25s;
+}
+
+#projects .project .project-link:hover {
+  background-color: #8b5cf6;
+  color: white;
+  border-color: #8b5cf6;
+}
+
 #education #education-p2 {
   box-shadow: 0 0 5px rgba(139, 92, 246, 0.4);
   padding: 20px 40px;
@@ -360,6 +390,11 @@ h3 {
   border: none;
   background-color: #8b5cf6;
   border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+#contact #contact-p2 #connect-section a img:hover {
+  transform: translateY(-5px);
+  background-color: #5b21b6;
 }
 #contact #contact-p3 input,
 #contact #contact-p3 textarea,
@@ -410,6 +445,11 @@ html {
   border-radius: 10px;
   bottom: 10px;
   right: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+#up-arrow:hover {
+  background-color: #8b5cf6;
+  transform: scale(1.1);
 }
 #up-arrow img {
   margin-top: 8px;
